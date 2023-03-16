@@ -1,0 +1,330 @@
+/*CSS RESET*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #00171F;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23003459' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23007EA7'%3E%3Ccircle cx='769' cy='229' r='6'/%3E%3Ccircle cx='539' cy='269' r='6'/%3E%3Ccircle cx='603' cy='493' r='6'/%3E%3Ccircle cx='731' cy='737' r='6'/%3E%3Ccircle cx='520' cy='660' r='6'/%3E%3Ccircle cx='309' cy='538' r='6'/%3E%3Ccircle cx='295' cy='764' r='6'/%3E%3Ccircle cx='40' cy='599' r='6'/%3E%3Ccircle cx='102' cy='382' r='6'/%3E%3Ccircle cx='127' cy='80' r='6'/%3E%3Ccircle cx='370' cy='105' r='6'/%3E%3Ccircle cx='578' cy='42' r='6'/%3E%3Ccircle cx='237' cy='261' r='6'/%3E%3Ccircle cx='390' cy='382' r='6'/%3E%3C/g%3E%3C/svg%3E");
+	overflow-x: hidden;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#navbar {
+	background-color: rgba(117, 117, 163, 0.3);
+}
+
+a:hover {
+/*	background-color: rgba(51, 204, 204, 0.6);*/
+	font-weight: bold;
+}
+
+/*HOME START*/
+/*Large Screen*/
+@media only screen and (min-width: 992px) {
+	#home {
+		display: flex;
+		flex: nowrap;
+		flex-direction: row-reverse;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		padding: 2rem;
+		margin-bottom: 3rem;
+		justify-content: space-evenly;
+		}
+	#home-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#myname {
+		font-size: 4rem;
+	}
+	#mytitle {
+		font-size: 3rem;
+	}
+	#home-subheading {
+		font-size: 2rem;
+	}
+}
+
+/*Medium Screen*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+ 	#home {
+ 		display: flex;
+ 		flex: wrap;
+ 		flex-direction: column;
+ 		align-items: center;
+ 		width: 100vw;
+ 		height: 100vh;
+ 		padding: 2rem;
+ 		margin-bottom: 3rem;
+ 		justify-content: center;
+ 	}
+ 	#home-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#myname {
+		font-size: 3rem;
+	}
+	#mytitle {
+		font-size: 2rem;
+	}
+	#home-subheading {
+		font-size: 1rem;
+	}
+}
+
+/*Small Screen*/
+@media only screen and (max-width: 767px) {
+	#home {
+		display: flex;
+		flex: wrap;
+		flex-direction: column;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		padding: 2rem;
+		margin-bottom: 3rem;
+		justify-content: center;
+	}
+	#mainpic {
+		width: 250px;
+	}
+}
+
+#myname {
+	border-bottom: 2px solid #007EA7;
+}
+
+h1, h2, h3, h5, p {
+	font-family: 'Poppins', sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+h1, h2, h3, h5 {
+	font-weight: bold;
+}
+
+#home-subheading {
+	margin-top: 10rem;
+}
+
+#mainpic {
+	background-color: rgba(179, 209, 255, 0.2);
+	border-radius: 50%;
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+}
+/*HOME END*/
+
+
+/*ABOUT ME START*/
+/*Large Screen*/
+@media only screen and (min-width: 992px) {
+	#about-me {
+		padding-top: 4rem;
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 3rem;
+		align-items: center;
+	}
+	#about-heading {
+		font-size: 4rem;
+	}
+	#description {
+		font-size: 30px;
+		max-width: 70%;
+
+	}
+	h3 {
+		font-size: 3rem;
+	}
+	#html-logo {
+		margin: 0 10rem;
+	}
+	#css-logo {
+		margin: 0 10rem;
+	}
+	#js-logo {
+		margin: 0 10rem;
+	}
+}
+
+/*Medium Screen*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	#about-me {
+		padding-top: 4rem;
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 3rem;
+	}
+	#about-heading {
+		font-size: 4rem;
+	}
+	#description {
+		font-size: 20px;
+	}
+	#html-logo {
+		width: 25%;
+		position: relative;
+		left: 10%;
+		top: 20%;
+	}
+	#css-logo {
+		width: 25%;
+		position: relative;
+		top: 120%;
+		left: 20%;
+	}
+	#js-logo {
+		width: 25%;
+		position: relative;
+		top: 120%;
+	}
+	h3 {
+		font-size: 3rem;
+	}
+}
+
+/*Small Screen*/
+@media only screen and (max-width: 767px) {
+ 	#about-me {
+		padding-top: 4rem;
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 3rem;
+	}
+	#css-logo{
+		position: relative;
+		top: 25%;
+		left: 5%;
+		z-index: 2;
+	}
+	#html-logo {
+		position: relative;
+		right: 20%;
+		z-index: 3;
+	}
+	#js-logo{
+		position: relative;
+		left: 30%;
+		top: -15%;
+		width: 70%;
+		z-index: 1;
+	}
+}
+
+#description {
+	padding: 1rem 2rem;
+	width: 100%;
+}
+
+.tools-img {
+	padding: 2rem;
+}
+
+#css-logo {
+	background-color: rgba(26, 83, 255, 1);
+	border-radius: 50%;
+}
+
+#html-logo {
+	background-color: rgba(255, 92, 51, 1);
+	border-radius: 50%;
+}
+
+#js-logo {
+	background-color: rgba(255, 255, 77, 1);
+	border-radius: 50%;
+}
+
+/*ABOUT ME END*/
+
+/*PROJECTS START*/
+#projects {
+	padding-top: 4rem;
+
+}
+#cards {
+	background-color: rgba(77, 148, 255, 0.4);
+}
+/*PROJECTS END*/
+
+/*CONTACTS START*/
+#contacts {
+	padding-top: 4rem;
+	height: 100vh;
+	width: 100vw;
+}
+
+/* Medium screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #contacts {
+  	padding-top: 15rem;
+  	height: 100vh;
+  	width: 100vw;
+  }
+}
+
+#contactform {
+	background-color: rgba(77, 148, 255, 0.4);
+}
+/*CONTACTS END*/
+
+/*FOOTER START*/
+footer {
+	position: static;
+	color: white;
+	text-align: center;
+}
+.footerlink {
+	font-size: 36px;
+	margin: 0 3rem;
+	color: white;
+}
+
+/*Large Screen*/
+@media only screen and (min-width: 992px) {
+  	footer {
+	  	position: fixed;
+		bottom: 2rem;
+		left: 37.25%;
+	}
+}
+
+/* Medium screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  footer {
+  	position: static;
+  	margin-top: 10rem;
+  	margin-bottom: 0;
+  	color: white;
+  	text-align: center;
+  }
+}
+
+/*Small Screen*/
+@media only screen and (max-width: 767px) {
+	.footerlink {
+		font-size: 36px;
+		margin: 0 20px;
+		color: white;
+	}
+}
+/*FOOTER END*/
